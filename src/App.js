@@ -1,10 +1,17 @@
+import { Route , Routes } from "react-router-dom";
+
+
 import './App.css';
+import { Home } from "./Components/Home";
+import { Login } from './Components/Login';
 
 function App() {
   return (
     <div className="App">
-      Hello React
-      We are learning React JS
+      <Routes>
+        <Route exect path="/" element={ < Login/> } />
+        <Route exect path="/home" element={ <Home/> } />
+      </Routes>
     </div>
   );
 }
